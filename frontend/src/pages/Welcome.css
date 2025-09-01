@@ -1,0 +1,110 @@
+/* Full page background */
+.welcome-container {
+  background-image: url('room.jpeg');
+  background-size: cover;   /* makes it cover full screen */
+  background-position: center; /* centers the image */
+  height: 100vh;  /* full screen height */
+  width: 100vw;   /* full screen width */
+  display: flex;  /* for centering content */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transparent overlay */
+.overlay-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings and text */
+.title {
+  font-size: 2rem; /* scalable */
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: black
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color : black
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  min-width: 120px;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #d0d0d0;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 600px) {
+  .overlay-box {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%; /* buttons stretch full width */
+  }
+}
+
+/* 💻 Larger screens */
+@media (min-width: 1200px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}
