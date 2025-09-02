@@ -1,0 +1,112 @@
+.page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1616594039964-5ff2a444ef98")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page h1 {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  margin-bottom: 15px;
+  background: #c1c7bd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* 📱 Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 16px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .page h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
