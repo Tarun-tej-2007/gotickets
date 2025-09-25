@@ -3,9 +3,9 @@
   background-image: url('room.jpeg');
   background-size: cover;   /* makes it cover full screen */
   background-position: center; /* centers the image */
-  height: 100vh;  /* full screen height */
-  width: 100vw;   /* full screen width */
-  display: flex;  /* for centering content */
+  height: 100vh;
+  width: 100vw; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
